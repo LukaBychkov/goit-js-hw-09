@@ -15,4 +15,88 @@
 @import url('./vite-promo.css');
 @import url('./badges.css');
 @import url('./back-link.css');
-@import url('./footer.css');
+
+.gallery {
+  padding: 24px;
+  grid-template-columns: repeat(3, 1fr);
+  display: grid;
+  gap: 24px;
+  list-style: none;
+
+  background: #fff;
+  margin: 0 auto;
+  max-width: 1128px;
+}
+
+.gallery-image {
+  display: block;
+  width: 100%;
+  height: 200px;
+}
+
+.feedback-form {
+  display: flex;
+  text-align: left;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 8px;
+
+  border-radius: 8px;
+  padding: 24px;
+  width: 408px;
+  background: #fff;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 14px;
+}
+
+.text input,
+.text textarea {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  padding: 8px 12px;
+  outline: none;
+  transition: border-color 0.25s ease;
+  width: 100%;
+  resize: none;
+}
+
+.text input:hover,
+.text textarea:hover {
+  border-color: #000;
+}
+
+.text input:focus,
+.text textarea:focus {
+  border-color: #4e75ff;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 8px;
+
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 95px;
+  height: 40px;
+
+  background: #4e75ff;
+  border: none;
+
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #6c8cff;
+}
