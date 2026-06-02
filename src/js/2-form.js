@@ -10,7 +10,6 @@ form.addEventListener('input', event => {
 
   formData[key] = value;
   localStorage.setItem('feedback-form-state', JSON.stringify(formData));
-  console.log(formData);
 });
 
 const savedData = localStorage.getItem('feedback-form-state');
